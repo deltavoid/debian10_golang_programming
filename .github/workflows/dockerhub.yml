@@ -36,7 +36,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: ${{ secrets.DOCKER_HUB_USERNAME }}/debian10_brpc_dev
+          images: ${{ secrets.DOCKER_HUB_USERNAME }}/debian10_golang_programming
           tags: |
             type=raw,value={{date 'YYYY.MM.DD'}}
             type=raw,value=latest
