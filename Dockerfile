@@ -1,10 +1,17 @@
 FROM deltavoid/debian10_golang_basic:2023.10.24
 
-# SHELL ["/bin/bash", "-c"]
+SHELL ["/bin/bash", "--login", "-c"]
+
+RUN cat ~/.bashrc
 
 RUN echo $0
 
-RUN env | grep SHELL
+RUN env
+# RUN env | grep SHELL
+
+RUN source ~/.bashrc
+
+RUN go version
 
 
 RUN mkdir -p /data/zhangqianyu/WorkSpace && \
