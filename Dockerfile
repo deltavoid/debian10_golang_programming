@@ -9,7 +9,7 @@ RUN echo $0
 RUN env
 # RUN env | grep SHELL
 
-RUN source ~/.bashrc
+# RUN source ~/.bashrc
 
 RUN go version
 
